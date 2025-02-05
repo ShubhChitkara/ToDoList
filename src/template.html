@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDo List</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">TO DO APP</div>
+        <div class="dashboard">
+            <button class="newtodobtn">+ New Todo</button>
+            <button class="newprojectbtn">+ New Project</button>
+        </div>
+        <div class="maincontent">
+            <div class="modal">
+                <div class="modal-content">
+                    <form id="task-form">
+                        <h3>New Task</h3>
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" name="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea name="description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Priority</label>
+                            <select name="priority" required>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Due Date</label>
+                            <input type="date" name="dueDate">
+                        </div>
+                        <div class="form-group">
+                            <label>Project</label>
+                            <select name="projectId" required></select>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary cancel-btn">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Create Task</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="project-modal modal">
+                <div class="modal-content">
+                    <form id="project-form">
+                        <h3>New Project</h3>
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" name="title" required>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary cancel-btn">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Create Project</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
